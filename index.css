@@ -43,10 +43,54 @@ body{
 }
 
 nav a:hover{
-  color: #0ef;
+  color: rgb(73, 77, 75);
 }
 
 .home{
    position: relative;
-   background: url(bckgrnd.png)
+   width:100%;
+   justify-content: space-between;
+   height: 100vh;
+   background: url(bckgrnd.png);
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: center;
+   padding: 20px 20% 0;
+   font-size: 30px;
+   
+}
+
+.home-content{
+   max-width: 600px;
+}
+
+.home-conetent h3{
+   font-size: 32px;
+   font-weight: 700;
+}
+.home-content h1{
+   font-size: 60px;
+   font-weight: 700;
+   margin: -3px 0;
+}
+
+.home-sci a{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   width:40px;
+   background: transparent;
+   border: 2px solid rgb(5, 80, 86);
+   border-radius: 50%;
+   font-size: 30px;
+   color: rgb(5, 80, 86);
+   text-decoration: none;
+   margin: 30px 15px 30px 0;
+}
+
+.home-sci a:hover{
+   background: rgb(5, 80, 86);
+   color: rgb(161, 156, 156);
+   box-shadow: 0 0 30px rgb(5, 80, 86);
 }
