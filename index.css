@@ -26,6 +26,17 @@
     z-index: 100;
  }
 
+ #icon{
+   color: white;
+   font-size: 30px;
+   float: right;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+
+ }
+
+
  .logo {
     position: relative;
     font-size: 30px;
@@ -539,3 +550,6 @@
        opacity: 1;
     }
  }
+
+
+ 

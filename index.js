@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+
+
 var typed = new Typed( ".text", {
     strings: ["HTML" , "CSS" , "JavaScript" , "React"],
     typeSpeed:100,
@@ -5,3 +17,4 @@ var typed = new Typed( ".text", {
     backDelay:1000,
     loop:true
 });
+
