@@ -9,8 +9,6 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
   
   
  
@@ -149,12 +147,13 @@
       </div>
     
 
-    <div class="contact-form">
-      <form action="">
-        <input type="" placeholder="Enter Your Name" required>
-        <input type="email" placeholder="Enter Your Email" required>
-        <input type="" placeholder="Enter Your Subject">
-        <textarea name="" id="" cols="40" rows="10" placeholder="EnterYour Message"></textarea>
+    <div class="contact-form" >
+      <div class="alert">Your message has been sent</div>
+      <form action="" id="contacForm">
+        <input type="" placeholder="Enter Your Name" required id="name">
+        <input type="email" placeholder="Enter Your Email" required id="email">
+        <input type="" placeholder="Enter Your Subject" id="subject">
+        <textarea name="" id="message" cols="40" rows="10" placeholder="EnterYour Message"></textarea>
         <input type="submit" vlaue="submit" class="send">
       </form>
     </div>
@@ -168,9 +167,79 @@
   
   <a href="#" class="top"><i class='bx bx-up-arrow-alt' style='color:#fff'></i></a>
 
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+    import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBHIL4soKSJLacLhJ9_DPV2lX5X9N2aenY",
+      authDomain: "personal-web-page-94487.firebaseapp.com",
+      databaseURL: "https://personal-web-page-94487-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "personal-web-page-94487",
+      storageBucket: "personal-web-page-94487.appspot.com",
+      messagingSenderId: "474558822687",
+      appId: "1:474558822687:web:d501d7a5374c98125cd82a",
+      measurementId: "G-1B2X8S96XT"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const database = getDatabase();
 
 
-  <script src="index.js"></script>
+    
+
+    var messagesRef = ref(database, 'messages');
+
+
+document.getElementById('contacForm').addEventListener('submit', submitForm);
+
+function submitForm(e){
+    e.preventDefault();
+
+    var name = getInputVal('name')
+    var email = getInputVal('email')
+    var subject = getInputVal('subject')
+    var message = getInputVal('message')
+
+   saveMessage(name, email, subject, message);
+
+   document.querySelector('.alert').style.display = 'block'
+
+   setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none'
+
+   },5000)
+
+
+}
+
+function getInputVal(id){
+    return document.getElementById(id).value;
+}
+
+// save messages to firebase
+
+function saveMessage(name, email, subject, message){
+        var newMessageRef = push(messagesRef);
+        set(newMessageRef, {
+            name: name,
+            email: email,
+            subject: subject,
+            message: message
+        })
+}
+
+  </script>
+  <script  src="index.js"></script>
 </body>
 
 </html>
