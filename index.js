@@ -1,5 +1,5 @@
 var typed = new Typed( ".text", {
-    strings: ["HTML" , "CSS" , "JavaScript" , "React"],
+    strings: ["HTML" , "CSS" , "JavaScript" , "React","Delphi","SQL"],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
@@ -7,12 +7,11 @@ var typed = new Typed( ".text", {
 });
 
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navBar = document.getElementsByClassName('navbar')[0]
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
 
-toggleButton.addEventListener('click', () =>{
-    navBar.classList.toggle('active')
-})
-
+menuToggle.addEventListener("click", ()=>{
+    navLinks.classList.toggle("active");
+});
 
 

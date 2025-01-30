@@ -1,245 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sabaudin</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sabaudin</title>
-  <link rel="stylesheet" href="index.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-  
- 
-</head>
-
-<body>
-  <header class="header">
-    <a href="#" class="logo">Sabaudin</a>
-    <a href="#" class="toggle-button">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </a>
-
-    <nav class="navbar">
-    <ul>
-      <a href="#" class="active">Home</a>
-      <a href="#">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
-    </ul>
-    </nav>
+  <body>
+    <header>
+      <nav class="navbar">
+          <div class="logo">Sabaudin</div>
+          <button class="menu-toggle" id="menuToggle">&#9776;</button>
+          <ul class="nav-links" id="navLinks">
+              <li><a href="#" class="active">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#project">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
   </header>
 
-  <section class="home">
-    <div class="home-content">
-      <h3>Hello, It's Me</h3>
-      <h1>Sabaudin Tozaj</h1>
-      <h3>Frontend Developer</h3>
-      <h3>Skills: <span class="text"></span></h3>
-      <div class="home-sci">
-
-        <a href="#"><i class='bx bxl-instagram'></i></a>
-        <a href="#"><i class='bx bxl-whatsapp'></i></a>
-        <a href="#"><i class='bx bxl-gmail'></i></a>
-        <a href="#"><i class='bx bxl-github'></i></a>
+    <section class="home">
+      <div class="home-content">
+        <div id="home-text">
+        <h3>Hello, It's Me</h3>
+        <h1>Sabaudin Tozaj</h1>
+        <h3>Frontend Developer</h3>
+        <h3>Skills: <span class="text"></span></h3>
+        </div>
+        <div class="home-sci">
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bxl-whatsapp"></i></a>
+          <a href="#"><i class="bx bxl-gmail"></i></a>
+          <a href="#"><i class="bx bxl-github"></i></a>
+        </div>
+        <a href="#" class="btn-box">Contact Me</a>
       </div>
-      <a href="#" class="btn-box">More About Me</a>
-    </div>
-  </section>
+    </section>
 
-  <section class="about" id="about">
-    <div class="about-img">
-      <img src="imprnt-modified.png">
-    </div>
-    <div class="about-text">
-      <h2>About<span>Me</span></h2>
-      <h4>Frontend Developer</h4>
-      <p>I'm a passionante and dedicate Fronend developer with strong enthusiasm for creating interactive and
-        user-friendly
-        web experiences. I thrive on solving challanges throught code and embracing new technologies to bring ideas to
-        life.
-        My foundation lies in JavaScript, HTML, and CSS, where I enjoy building responsive and dynamic web applications.
-        I'm also familiar with front-end libraries like React, which I use to develop intuitive and seamless user
-        interfaces.
-        My experience with version control using Git and collaborating on projects within agile teams has honed my
-        ability to
-        work efficiently and produce high-quality code. I believe in the power of collaboration and open communication.
-        Working within diverse teams has taught me the importance of understanding different perspectives and finding
-        innovative
-        solutions collectively. I'm excited to contribute my skills and enthusiasm to projects that make a positive
-        impact.
-        When I'm not immersed in coding, you can find me exploring the latest developments in web technology, attending
-        tech meetups,
-        and experimenting with new coding challenges. I also enjoy sharing my knowledge by writing articles on web
-        development topics.
-      </p>
-      <a href="#" class="btn-box">More About Me</a>
-    </div>
-  </section>
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="imprnt-modified.png" />
+      </div>
+      <div class="about-text">
+        <h2>About<span>Me</span></h2>
+        <h4>Frontend Developer</h4>
+        <p>
+          I'm a passionante and dedicate Frontend developer with strong
+          enthusiasm for creating interactive and user-friendly web experiences.
+          I thrive on solving challanges throught code and embracing new
+          technologies to bring ideas to life. My foundation lies in JavaScript,
+          HTML, and CSS, where I enjoy building responsive and dynamic web
+          applications. I'm also familiar with front-end libraries like React,
+          which I use to develop intuitive and seamless user interfaces. My
+          experience with version control using Git and collaborating on
+          projects within agile teams has honed my ability to work efficiently
+          and produce high-quality code. I believe in the power of collaboration
+          and open communication. Working within diverse teams has taught me the
+          importance of understanding different perspectives and finding
+          innovative solutions collectively. I'm excited to contribute my skills
+          and enthusiasm to projects that make a positive impact. When I'm not
+          immersed in coding, you can find me exploring the latest developments
+          in web technology, attending tech meetups, and experimenting with new
+          coding challenges. I also enjoy sharing my knowledge by writing
+          articles on web development topics.
+        </p>
+        <a href="#" class="btn-box">More About Me</a>
+      </div>
+    </section>
 
-  <section>
-    <div class="skills" id="skills"></div>
-    <div class="container">
-      <h1 class="sub-title">My<span>Skills</span></h1>
-      <div class="skills-list">
-        <div>
-          <i class='bx bxs-file-html' style='color:#055056'></i>
-          <h2>UI</h2>
-          <p>expalin skill ssjkslaf;gjerjer;fjwoefjeocjwe;ovnwriuvhwrcmccnjxnss s sniqwjjxn knqkw</p>
-          <a href="#" class="read">learn more</a>
-        </div>
-        <div>
-          <i class='bx bxl-css3' style='color:#055056'></i>
-          <h2>UI</h2>
-          <p>expalin skill</p>
-          <a href="#" class="read">learn more</a>
-        </div>
-        <div>
-          <i class='bx bxl-javascript' style='color:#055056'></i>
-          <h2>UI</h2>
-          <p>expalin skill</p>
-          <a href="#" class="read">learn more</a>
+    <section>
+      <div class="skills" id="skills"></div>
+      <div class="container">
+        <h1 class="sub-title">My<span>Skills</span></h1>
+        <div class="skills-list">
+          <div>
+            <i class="bx bxs-file-html" style="color: #055056"></i>
+            <h2>UI</h2>
+            <p>
+              expalin skill ssjkslaf;gjerjer;fjwoefjeocjwe;ovnwriuvhwrcmccnjxnss
+              s sniqwjjxn knqkw
+            </p>
+            <a href="#" class="read">learn more</a>
+          </div>
+          <div>
+            <i class="bx bxl-css3" style="color: #055056"></i>
+            <h2>UI</h2>
+            <p>expalin skill</p>
+            <a href="#" class="read">learn more</a>
+          </div>
+          <div>
+            <i class="bx bxl-javascript" style="color: #055056"></i>
+            <h2>UI</h2>
+            <p>expalin skill</p>
+            <a href="#" class="read">learn more</a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div id="portfolio" id="project">
-      <div class="main-text" id="project">
-        <h2>Latest<span>Project</span></h2>
+    <section>
+      <div id="portfolio" id="project">
+        <div class="main-text" id="project">
+          <h2>Latest<span>Project</span></h2>
 
-        <div class="portfolio-content">
-          <div class="row">
-            <img src="github.png" alt="">
-            <div class="layer">
-              <h5>GitHub</h5>
-              <p>Every project or task i have ever made is hosted on GitHub</p>
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="github.png" alt="" />
+              <div class="layer">
+                <h5>GitHub</h5>
+                <p>
+                  Every project or task i have ever made is hosted on GitHub
+                </p>
 
-              <a href="#"><i class='bx bx-link-external' style='color:white'></i></a>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: white"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="contact" id="contact">
-      <div class="contact-text">
-        <h2>Contact<span>Me</span></h2>
-        <h4>Let's work otgether</h4>
-        <p>writte something</p>
-        <div class="contact-list">
-          <li><i class='bx bxs-send' style='color:#055055'></i>s.tozaj@gmail.com</li>
-          <li><i class='bx bxs-phone' style='color:#055055'></i>+355695685031</li>
+    <section>
+      <div class="contact" id="contact">
+        <div class="contact-text">
+          <h2>Contact<span>Me</span></h2>
+          <h4>Let's work otgether</h4>
+          <p>writte something</p>
+          <div class="contact-list">
+            <li>
+              <i class="bx bxs-send" style="color: #055055"></i
+              >s.tozaj@gmail.com
+            </li>
+            <li>
+              <i class="bx bxs-phone" style="color: #055055"></i>+355695685031
+            </li>
+          </div>
+          <div class="contact-icons">
+            <a href="#"
+              ><i class="bx bxl-instagram" style="color: #055055"></i
+            ></a>
+            <a href="#"
+              ><i class="bx bxl-whatsapp" style="color: #055055"></i
+            ></a>
+            <a href="#"><i class="bx bxl-gmail" style="color: #055055"></i></a>
+            <a href="#"
+              ><i class="bx bxl-linkedin-square" style="color: #055055"></i
+            ></a>
+          </div>
         </div>
-        <div class="contact-icons">
-          <a href="#"><i class='bx bxl-instagram' style='color:#055055'></i></a>
-          <a href="#"><i class='bx bxl-whatsapp' style='color:#055055'></i></a>
-          <a href="#"><i class='bx bxl-gmail' style='color:#055055'></i></a>
-          <a href="#"><i class='bx bxl-linkedin-square' style='color:#055055'></i></a>
+
+        <div class="contact-form">
+          <div class="alert">Your message has been sent</div>
+          <form action="" id="contacForm">
+            <input type="" placeholder="Enter Your Name" required id="name" />
+            <input
+              type="email"
+              placeholder="Enter Your Email"
+              required
+              id="email"
+            />
+            <input type="" placeholder="Enter Your Subject" id="subject" />
+            <textarea
+              name=""
+              id="message"
+              cols="40"
+              rows="10"
+              placeholder="EnterYour Message"
+            ></textarea>
+            <input type="submit" vlaue="submit" class="send" />
+          </form>
         </div>
       </div>
-    
+    </section>
 
-    <div class="contact-form" >
-      <div class="alert">Your message has been sent</div>
-      <form action="" id="contacForm">
-        <input type="" placeholder="Enter Your Name" required id="name">
-        <input type="email" placeholder="Enter Your Email" required id="email">
-        <input type="" placeholder="Enter Your Subject" id="subject">
-        <textarea name="" id="message" cols="40" rows="10" placeholder="EnterYour Message"></textarea>
-        <input type="submit" vlaue="submit" class="send">
-      </form>
+    <div class="footer">
+      <p>Made By Sabaudin</p>
     </div>
-  </div>
 
-  </section>
+    <a href="#" class="top"
+      ><i class="bx bx-up-arrow-alt" style="color: #fff"></i
+    ></a>
 
-  <div class="footer">
-    <p>Made By Sabaudin</p>
-  </div>
-  
-  <a href="#" class="top"><i class='bx bx-up-arrow-alt' style='color:#fff'></i></a>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+      import {
+        getDatabase,
+        ref,
+        push,
+        set,
+      } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-    import { getDatabase, ref, push, set } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-database.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyBHIL4soKSJLacLhJ9_DPV2lX5X9N2aenY",
-      authDomain: "personal-web-page-94487.firebaseapp.com",
-      databaseURL: "https://personal-web-page-94487-default-rtdb.europe-west1.firebasedatabase.app",
-      projectId: "personal-web-page-94487",
-      storageBucket: "personal-web-page-94487.appspot.com",
-      messagingSenderId: "474558822687",
-      appId: "1:474558822687:web:d501d7a5374c98125cd82a",
-      measurementId: "G-1B2X8S96XT"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-    const database = getDatabase();
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyBHIL4soKSJLacLhJ9_DPV2lX5X9N2aenY",
+        authDomain: "personal-web-page-94487.firebaseapp.com",
+        databaseURL:
+          "https://personal-web-page-94487-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "personal-web-page-94487",
+        storageBucket: "personal-web-page-94487.appspot.com",
+        messagingSenderId: "474558822687",
+        appId: "1:474558822687:web:d501d7a5374c98125cd82a",
+        measurementId: "G-1B2X8S96XT",
+      };
 
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+      const database = getDatabase();
 
-    
+      var messagesRef = ref(database, "messages");
 
-    var messagesRef = ref(database, 'messages');
+      document
+        .getElementById("contacForm")
+        .addEventListener("submit", submitForm);
 
+      function submitForm(e) {
+        e.preventDefault();
 
-document.getElementById('contacForm').addEventListener('submit', submitForm);
+        var name = getInputVal("name");
+        var email = getInputVal("email");
+        var subject = getInputVal("subject");
+        var message = getInputVal("message");
 
-function submitForm(e){
-    e.preventDefault();
+        saveMessage(name, email, subject, message);
 
-    var name = getInputVal('name')
-    var email = getInputVal('email')
-    var subject = getInputVal('subject')
-    var message = getInputVal('message')
+        document.querySelector(".alert").style.display = "block";
 
-   saveMessage(name, email, subject, message);
+        setTimeout(function () {
+          document.querySelector(".alert").style.display = "none";
+        }, 5000);
+      }
 
-   document.querySelector('.alert').style.display = 'block'
+      function getInputVal(id) {
+        return document.getElementById(id).value;
+      }
 
-   setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none'
+      // save messages to firebase
 
-   },5000)
-
-
-}
-
-function getInputVal(id){
-    return document.getElementById(id).value;
-}
-
-// save messages to firebase
-
-function saveMessage(name, email, subject, message){
+      function saveMessage(name, email, subject, message) {
         var newMessageRef = push(messagesRef);
         set(newMessageRef, {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        })
-}
-
-  </script>
-  <script  src="index.js"></script>
-</body>
-
+          name: name,
+          email: email,
+          subject: subject,
+          message: message,
+        });
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
 </html>
